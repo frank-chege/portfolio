@@ -35,6 +35,7 @@
             display: flex;
             justify-content: center;
             padding: 10px 0;
+            flex-wrap: wrap;
         }
         nav a {
             color: #e0e0e0;
@@ -111,13 +112,48 @@
         footer a:hover {
             text-decoration: underline;
         }
+        a {
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+            .section p {
+                font-size: 1em;
+            }
+            .skill, .project {
+                width: 75%;
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                padding: 10px 15px;
+            }
+            header {
+                padding: 20px 10px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .section {
+                padding: 40px 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Frank Chege</h1>
         <p>Software Engineer & Web Developer</p>
-        <img src="./images/test1.jpeg" alt="Frank Chege" width="150" height="150">
+        <img src="./images/profile.jpeg" alt="Frank Chege" width="150" height="150">
     </header>
     <nav>
         <a href="#home">Home</a>
