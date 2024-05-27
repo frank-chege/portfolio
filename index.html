@@ -1,63 +1,181 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My portfolio | Frank's portfolio</title>
-    <meta name="My portfolio" content="skills, services, costs">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./images/test1.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Frank Chege</title>
     <style>
-        body{
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 40px 20px;
             text-align: center;
         }
-        nav{
-            font-size: 1.5rem;
-            text-align: center;
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #3498db;
         }
-        nav a{
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
+        header p {
+            margin: 5px 0 20px;
+            font-size: 1.2em;
+            color: #a8a8a8;
         }
-        h1{
-            color: orange;
+        header img {
+            border-radius: 50%;
+            margin-top: 10px;
         }
-        h2{
-            color: brown;
+        nav {
+            background-color: #292929;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
         }
-        p{
-            color: rgb(0, 0, 0);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        img{
-            width: 10rem;
-            height: 10rem;
-        }
-        a{
+        nav a {
+            color: #e0e0e0;
+            padding: 15px 20px;
             text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #3498db;
+            color: #121212;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section:nth-of-type(even) {
+            background-color: #1f1f1f;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin: 0 auto 40px;
+            max-width: 800px;
+            line-height: 1.6em;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill, .project {
+            background-color: #292929;
+            border: 1px solid #333;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: #3498db;
+            color: #121212;
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Frank Chege</h1>
+        <p>Software Engineer & Web Developer</p>
+        <img src="./images/test1.jpeg" alt="Frank Chege" width="150" height="150">
+    </header>
     <nav>
-        <a href="">home</a>
-        <a href="">services</a>
-        <a href="">about</a>
-        <a href="">help</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <h1>My portfolio</h1>
-    <img src="./images/test1.jpeg" alt="">
-    <h2>Skills</h2>
-    <p>python, flask, javascript, C, html, css</p>
-
-    <h2>My work</h2>
-    <h3>Hospital webApplication</h3>
-    <p>
-        <a href="https://franksolutions.tech" target="_blank" rel="noopener noreferr">Click link to visit site</a>
-    </p>
-
-    <h2>My mission</h2>
-    <p>To offer the best services</p>
-
-    <h2>hobies</h2>
-    <p>coding, playing chess</p>
-
+    <div id="home" class="section">
+        <h2>Welcome</h2>
+        <p>Welcome to my professional portfolio. Here, you can find information about my skills, projects, and how to contact me.</p>
+    </div>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a passionate software engineer and web developer with expertise in modern web technologies. I enjoy creating innovative solutions and improving the user experience.</p>
+    </div>
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Flask</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">MongoDB</div>
+        </div>
+    </div>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Logistics Website</h3>
+                <p>A comprehensive logistics management system designed to streamline operations and improve efficiency.</p>
+                <img src="./images/logistics.png" alt="Logistics Website">
+                <a href="https://logistics-website-nu.vercel.app/index.html" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Hospital Website</h3>
+                <p>A user-friendly hospital management system that facilitates patient management and administrative tasks.</p>
+                <img src="./images/hospital.png" alt="Hospital Website">
+                <a href="https://franksolutions.tech" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me through the following methods:</p>
+        <p>Phone: <a href="tel:+254712750179">+254712750179</a></p>
+        <p>Email: <a href="mailto:francischege602@gmail.com">francischege602@gmail.com</a></p>
+        <p>Social Media:</p>
+        <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/frankrazzih" target="_blank">GitHub</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Frank Chege. All rights reserved.</p>
+        <p>Designed by Frank Chege</p>
+    </footer>
 </body>
 </html>
