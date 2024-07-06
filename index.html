@@ -100,6 +100,20 @@
             border-radius: 8px;
             margin-top: 15px;
         }
+        .resume-download {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .resume-download:hover {
+            background-color: #1f78b4;
+        }
         footer {
             background-color: #1f1f1f;
             text-align: center;
@@ -119,8 +133,8 @@
         a {
             text-decoration: none;
         }
-        a{
-                color: #3498db;
+        a {
+            color: #3498db;
         }
         @media (max-width: 768px) {
             header h1 {
@@ -171,11 +185,15 @@
     </nav>
     <div id="home" class="section">
         <h2>Welcome</h2>
-        <p>Welcome to my professional portfolio. Here, you can find information about my skills, projects, and how to contact me.</p>
+        <p>Welcome to my professional portfolio. Dive in to explore my journey as a software engineer and web developer, where innovation meets excellence. Discover my skills, projects, and the passion that drives me to create impactful solutions. Let's connect and build something amazing together!</p>
     </div>
     <div id="about" class="section">
         <h2>About Me</h2>
-        <p>I am a passionate software engineer and web developer with expertise in modern web technologies. I enjoy creating innovative solutions and improving the user experience.</p>
+        <p>With a keen eye for detail and a drive for perfection, I am a dedicated software engineer and web developer. My expertise spans modern web technologies, allowing me to craft seamless and user-friendly experiences. I thrive on solving complex problems and continuously learning to stay ahead in this dynamic field. Let's collaborate and turn ideas into reality!</p>
+    </div>
+
+    <div class="section">
+        <a href="Resume (3).docx" class="resume-download" download="Frank_Chege_Resume.pdf">Download Resume</a>
     </div>
     <div id="skills" class="section">
         <h2>Skills</h2>
@@ -183,7 +201,6 @@
             <div class="skill">Python</div>
             <div class="skill">Flask</div>
             <div class="skill">JavaScript</div>
-            <div class="skill">C</div>
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill">MySQL</div>
@@ -195,6 +212,12 @@
     <div id="projects" class="section">
         <h2>Projects</h2>
         <div class="projects">
+            <div class="project">
+                <h3>Heritage farms</h3>
+                <p>A website for a farming holding company.</p>
+                <img src="./images/Screenshot from 2024-07-06 23-42-29.png" alt="Hospital Website">
+                <a href="https://heritagefarms.odoo.com" target="_blank">View Project</a>
+            </div>
             <div class="project">
                 <h3>Logistics Website</h3>
                 <p>A comprehensive logistics management system designed to streamline operations and improve efficiency.</p>
@@ -223,4 +246,3 @@
         <p>Designed by Frank Chege</p>
     </footer>
 </body>
-</html>
