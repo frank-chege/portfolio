@@ -29,9 +29,9 @@ a:hover {
 
 /* Navigation */
 nav {
-  background: #222; /* Darker navigation bar */
+  background: #121212; /* Darker navigation bar */
   color: #fff;
-  padding: 10px 0;
+  padding: 12px 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -41,11 +41,6 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav .logo {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 nav ul {
@@ -59,11 +54,12 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  padding: 5px 10px;
+  padding: 15px 10px;
 }
 
 nav ul li a:hover {
-  background: #1abc9c;
+  background: #fff;
+  color: #1abc9c;
   border-radius: 5px;
 }
 
@@ -351,5 +347,12 @@ footer {
   width: 13rem; /* Adjust as needed */
   height: 13rem; /* Adjust as needed */
   border-radius: 50%; /* Makes the image circular */
-  margin-bottom: 20px; /* Space between the image and the text */
+  margin-bottom: 1rem; /* Space between the image and the text */
+  margin-top: 4rem;
+}
+.container .profile-img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
