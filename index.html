@@ -1,248 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/profile.jpeg" type="image/x-icon">
-    <title>Portfolio of Frank Chege</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #1f1f1f;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #3498db;
-        }
-        header p {
-            margin: 5px 0 20px;
-            font-size: 1.2em;
-            color: #a8a8a8;
-        }
-        header img {
-            border-radius: 50%;
-            margin-top: 10px;
-        }
-        nav {
-            background-color: #292929;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: #e0e0e0;
-            padding: 15px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #3498db;
-            color: #121212;
-            border-radius: 5px;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .section:nth-of-type(even) {
-            background-color: #1f1f1f;
-        }
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #3498db;
-        }
-        .section p {
-            font-size: 1.2em;
-            margin: 0 auto 40px;
-            max-width: 800px;
-            line-height: 1.6em;
-        }
-        .skills, .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .skill, .project {
-            background-color: #292929;
-            border: 1px solid #333;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-            width: 300px;
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-        }
-        .skill:hover, .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            background-color: #3498db;
-            color: #121212;
-        }
-        .project h3 {
-            margin-top: 0;
-            color: #3498db;
-        }
-        .project a{
-            color: white;
-        }
-        .project img {
-            width: 100%;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-        .resume-download {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #121212;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .resume-download:hover {
-            background-color: #1f78b4;
-        }
-        footer {
-            background-color: #1f1f1f;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-        footer p {
-            margin: 5px 0;
-        }
-        footer a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        a {
-            text-decoration: none;
-        }
-        a {
-            color: #3498db;
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            .section h2 {
-                font-size: 2em;
-            }
-            .section p {
-                font-size: 1em;
-            }
-            .skill, .project {
-                width: 75%;
-                margin: 10px 0;
-            }
-        }
-        @media (max-width: 480px) {
-            nav a {
-                padding: 10px 15px;
-            }
-            header {
-                padding: 20px 10px;
-            }
-            header h1 {
-                font-size: 1.5em;
-            }
-            header p {
-                font-size: 1em;
-            }
-            .section {
-                padding: 40px 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Frank Chege</h1>
-        <p>Software Engineer & Web Developer</p>
-        <img src="./images/profile.jpeg" alt="Frank Chege" width="150" height="150">
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <div class="container">
+        <div class="logo">Your Name</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <div id="home" class="section">
-        <h2>Welcome</h2>
-        <p>Welcome to my professional portfolio. Dive in to explore my journey as a software engineer and web developer, where innovation meets excellence. Discover my skills, projects, and the passion that drives me to create impactful solutions. Let's connect and build something amazing together!</p>
-    </div>
-    <div id="about" class="section">
-        <h2>About Me</h2>
-        <p>With a keen eye for detail and a drive for perfection, I am a dedicated software engineer and web developer. My expertise spans modern web technologies, allowing me to craft seamless and user-friendly experiences. I thrive on solving complex problems and continuously learning to stay ahead in this dynamic field. Let's collaborate and turn ideas into reality!</p>
-    </div>
 
-    <div class="section">
-        <a href="Resume (4).docx" class="resume-download" download="Frank_Chege_Resume.pdf">Download Resume</a>
-    </div>
-    <div id="skills" class="section">
+    <!-- Header -->
+    <header id="header">
+      <div class="header-content">
+        <h1>I'm <span>Your Name</span></h1>
+        <p>Software Engineer & Web Developer</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <!--about section-->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate software engineer with experience in designing,
+          building, and testing distributed systems. I am proficient in Python,
+          JavaScript, React, and MySQL, and I enjoy building innovative and
+          user-friendly web applications. My recent work includes a hospital web
+          application and a telemedicine platform.
+        </p>
+        <a href="Resume-Francis Mugo Chege.pdf" class="btn">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="hospital_web_app.jpg" alt="Hospital Web Application" />
+            <div class="overlay">
+              <h3>Hospital Web Application</h3>
+              <p>
+                A comprehensive web application for a hospital, featuring user
+                registration, appointment bookings, and database management.
+              </p>
+              <a href="https://franksolutions.tech" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="telemedicine_platform.jpg" alt="Telemedicine Platform" />
+            <div class="overlay">
+              <h3>Telemedicine Platform</h3>
+              <p>
+                An advanced telehealth platform for booking consultations,
+                conducting virtual meetings, and purchasing medicine from
+                pharmacies.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="logistics_company_website.jpg"
+              alt="Logistics Company Website"
+            />
+            <div class="overlay">
+              <h3>Logistics Company Website</h3>
+              <p>
+                Frontend-focused website with enquiry forms for a logistics
+                company. Currently a work in progress.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="farming_company.jpg" alt="Farming Holding Company" />
+            <div class="overlay">
+              <h3>Farming Holding Company</h3>
+              <p>
+                An informative business website for a farming holding company,
+                designed using Odoo.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
         <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Python</div>
-            <div class="skill">Flask</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">SQLAlchemy</div>
-            <div class="skill">MongoDB</div>
-            <div class="skill">Redis</div>
+        <div class="skills-grid">
+          <div class="skill">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-html5"></i>
+            <h3>HTML & CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fas fa-server"></i>
+            <h3>DevOps</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Heritage farms</h3>
-                <p>A website for a farming holding company.</p>
-                <img src="./images/Screenshot from 2024-07-06 23-42-29.png" alt="Hospital Website">
-                <a href="https://heritagefarms.odoo.com" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Logistics Website</h3>
-                <p>A comprehensive logistics management system designed to streamline operations and improve efficiency.</p>
-                <img src="./images/logistics.png" alt="Logistics Website">
-                <a href="https://logistics-company-website.vercel.app/" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Hospital Website</h3>
-                <p>A user-friendly hospital management system that facilitates patient management and administrative tasks.</p>
-                <img src="./images/hospital.png" alt="Hospital Website">
-                <a href="https://franksolutions.tech" target="_blank">View Project</a>
-            </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Software Engineer</h3>
+            <span>ALX Africa | May 2023 - July 2024</span>
+            <p>
+              Specialization in Backend Development. Worked on various projects
+              including a hospital web application and a telemedicine platform.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Freelance Developer</h3>
+            <span>Various Clients | Ongoing</span>
+            <p>
+              Developed a logistics company website and an informative website
+              for a farming holding company using Odoo and other technologies.
+            </p>
+          </div>
         </div>
-    </div>
-    <div id="contact" class="section">
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
         <h2>Contact</h2>
-        <p>Feel free to reach out to me through the following methods:</p>
-        <p>Phone: <a href="tel:+254712750179">+254712750179</a></p>
-        <p>Email: <a href="mailto:francischege602@gmail.com">francischege602@gmail.com</a></p>
-        <p>Social Media:</p>
-        <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/frankrazzih" target="_blank">GitHub</a></p>
-    </div>
+        <p>
+          Feel free to get in touch with me via the form below or follow me on
+          social media.
+        </p>
+        <form action="submit_form.php" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-links">
+          <a href="https://github.com/your-github"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/your-linkedin"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Frank Chege. All rights reserved.</p>
-        <p>Designed by Frank Chege</p>
+      <div class="container">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      </div>
     </footer>
-</body>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
