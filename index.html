@@ -12,12 +12,12 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="large_nav">
       <div class="container">
         <a href="#header">
-          <img src="profile_image.jpg" alt="Your Name" class="profile-img" />
+          <h1>FC</h1>
         </a>
-        <ul class="nav-links">
+        <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -26,6 +26,30 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Side nav bar -->
+    <nav class="show_menu">
+      <a href="#header">
+        <h1>FC</h1>
+      </a>
+      <div onclick="toggleMenu()" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="small_nav">
+      <div onclick="toggleMenu()" class="menu-icon">
+        <i id="close_icon" class="fas fa-times close_icon"></i>
+      </div>
+
+      <ul class="side_nav_links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
     <!-- Header -->
     <header id="header">
@@ -58,25 +82,6 @@
           class="btn"
           >Download Resume</a
         >
-      </div>
-    </section>
-
-    <!-- Certificate Section -->
-    <section id="certificate" class="section">
-      <div class="container">
-        <h2>Certificate</h2>
-        <div class="certificate-content">
-          <img
-            src="certificate_image.jpg"
-            alt="Software Engineering Certificate"
-            class="certificate-img"
-          />
-          <p>
-            This certifies that I am certified in Software Engineering, having
-            completed an in-depth course that provided essential knowledge and
-            practical skills for a career in software development.
-          </p>
-        </div>
       </div>
     </section>
 
@@ -265,6 +270,24 @@
         </div>
       </div>
     </section>
+    <!-- Certificate Section -->
+    <section id="certificate" class="section">
+      <div class="container">
+        <h2>Certificate</h2>
+        <div class="certificate-content">
+          <img
+            src="certificate_image.jpg"
+            alt="Software Engineering Certificate"
+            class="certificate-img"
+          />
+          <p>
+            This certifies that I am certified in Software Engineering, having
+            completed an in-depth course that provided essential knowledge and
+            practical skills for a career in software development.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
@@ -295,7 +318,7 @@
           <a href="https://www.linkedin.com/in/frank-chege-b6bb73265/"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://www.linkedin.com/in/frank-chege-b6bb73265/"
+          <a href="https://x.com/frankchege001"
             ><i class="fab fa-twitter"></i
           ></a>
           <a href=" https://www.instagram.com/frank._chege/"
