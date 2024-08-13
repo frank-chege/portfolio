@@ -448,3 +448,8 @@ footer {
     display: none;
   }
 }
+@media (max-width: 450px) {
+  .small_nav {
+    width: 60vw;
+  }
+}
